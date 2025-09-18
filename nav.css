@@ -1,0 +1,68 @@
+/* ===== NAVBAR ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #00bcd4;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #00bcd4;
+}
+
+.resume-btn {
+  padding: 6px 14px;
+  background: #00bcd4;
+  color: #111 !important;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: #00a2b5;
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  nav {
+    padding: 14px 5%;
+  }
+
+  .nav-links {
+    display: none; /* Later you can add JS toggle */
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+  }
+}

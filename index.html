@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik | Front-End Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Karthik G - Front-End Developer skilled in HTML, CSS, JavaScript, and React JS. Explore my projects, skills, and journey.">
+  <link rel="stylesheet" href="./nav.css">
+  <link rel="stylesheet" href="./hero.css">
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./skills.css">
+  <link rel="stylesheet" href="./projects.css">
+  <link rel="stylesheet" href="./contact.css">
+  <link rel="stylesheet" href="./footer.css">
+  <script src="./project.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header id="home">
+    <nav>
+      <div class="logo">
+        <a href="#home">Karthik<span>.</span></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="./Karthik_G_Updated_Resume.pdf" download="Karthik_Resume.pdf" class="resume-btn">Resume</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <div class="hero">
+      <div class="container1">
+        <h1>Hi, I'm <span>Karthik</span></h1>
+        <p>Front-End Developer passionate about crafting clean, responsive websites using HTML, CSS, JavaScript
+          & React-JS.</p>
+        <a href="#projects"><button>View My Work</button></a>
+      </div>
+      <div class="container2">
+        <img src="./Images/hero.png" alt="Karthik Front-End Developer">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="aboutContainer1">
+        <h2>About Me</h2>
+        <p>A quick overview of my education and journey so far.</p>
+      </div>
+      <div class="aboutContainer2">
+        <div class="aboutcontent1">
+          <h3>Hi, I'm <span>Karthik G</span></h3>
+          <p>I am a passionate Front-End Developer with a background in Mechanical Engineering. I have hands-on
+            experience building responsive and user-friendly websites using HTML, CSS, JavaScript, and React JS. I am
+            eager to apply my skills in real-world projects, learn new technologies, and contribute to building efficient
+            and visually appealing web applications.</p>
+        </div>
+        <div class="aboutcontent2">
+          <div class="education1">
+            <h3>2018 – 2022</h3>
+            <p><b>B.E. Mechanical Engineering</b></p>
+            <p>Kumaraguru College of Technology</p>
+            <p>CGPA: 7.85</p>
+          </div>
+          <div class="education2">
+            <h3>2016 – 2018</h3>
+            <p><b>HSC</b></p>
+            <p>Sri Saraswathi Vidyalaya Matric Hr. Sec. School</p>
+            <p>Percentage: 71%</p>
+          </div>
+          <div class="education3">
+            <h3>2015 – 2016</h3>
+            <p><b>SSLC</b></p>
+            <p>Bharat Matriculation Higher Secondary School</p>
+            <p>Percentage: 76%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+      <h2>My Skills</h2>
+      <p>Technologies I use to build modern websites</p>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Icon">
+          <h3>HTML</h3>
+          <p>Semantic, clean, and responsive structures with HTML5.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Icon">
+          <h3>CSS</h3>
+          <p>Modern layouts, animations, and responsive styling.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS Icon">
+          <h3>JavaScript</h3>
+          <p>Interactive UI, dynamic content, and functionality.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1183/1183672.png" alt="React JS Icon">
+          <h3>React JS</h3>
+          <p>Component-based apps with React for dynamic UIs.</p>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/328/328200.png" alt="SQL Icon">
+          <h3>Basic SQL</h3>
+          <p>Managing databases, queries, and relational data.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects">
+  <h3>My Projects</h3>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="./Images/Websitte nav.png" alt="CCD Website">
+      <h3>CCD Website</h3>
+      <span>Tools used - HTML, CSS, JavaScript</span>
+      <button onclick="openDemo('https://karthik243011.github.io/Cof/')">Demo</button>
+    </div>
+
+    <div class="project-card">
+      <img src="./Images/ShopEase WebPage.png" alt="ShopEase E-Commerce Store">
+      <h3>ShopEase E-Commerce Store</h3>
+      <span class="tools">Tools used: HTML, CSS, JavaScript</span>
+      <button onclick="openDemo('https://shopease4.netlify.app/')">Demo</button>
+    </div>
+
+    <div class="project-card">
+      <img src="./Images/Electronics webPage.png" alt="Electronics Store">
+      <h3>Electronics Store</h3>
+      <span class="tools">Tools used: React JS, CSS</span>
+      <button onclick="openDemo('https://nextgenelectronics.netlify.app/')">Demo</button>
+    </div>
+
+    <div class="project-card">
+      <img src="./Images/Zudio WebPage.png" alt="Zudio Clothes Store">
+      <h3>Zudio Clothes Store</h3>
+      <span class="tools">Tools used: React JS, CSS</span>
+      <button onclick="openDemo('https://zudiowebsite3.netlify.app/')">Demo</button>
+    </div>
+
+    <div class="project-card">
+      <img src="./Images/MovieApp webpage.png" alt="Movie Search App">
+      <h3>Movie Search App</h3>
+      <span class="tools">Tools used: React JS, CSS, API</span>
+      <button onclick="openDemo('https://moviesearchappreactjs.netlify.app/')">Demo</button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <form>
+        <h2>Contact Me</h2>
+        <input type="text" placeholder="Enter your name" required>
+        <input type="number" placeholder="Enter your number" required>
+        <input type="email" placeholder="Enter your email" required>
+        <textarea placeholder="Enter your message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-align">
+      <div><i class="fa-solid fa-envelope"></i>
+        <p><a href="mailto:Karthik.g3011@gmail.com">Karthik.g3011@gmail.com</a></p>
+      </div>
+      <div><i class="fa-solid fa-location-dot"></i>
+        <p>Bangalore, Karnataka 560070</p>
+      </div>
+      <div><i class="fa-solid fa-phone"></i>
+        <p><a href="tel:+919786114424">+91-978-611-4424</a></p>
+      </div>
+    </div>
+    <p class="copyright">© 2025 by <span>Karthik</span> | All rights reserved</p>
+  </footer>
+</body>
+
+</html>

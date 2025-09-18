@@ -1,0 +1,51 @@
+/* ===== CONTACT ===== */
+.contact {
+  padding: 60px 8%;
+  background: #111;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 100%;
+}
+
+.contact button {
+  padding: 12px;
+  background: #00bcd4;
+  color: #111;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background: #009bb5;
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .contact form {
+    width: 70%;
+    padding: 20px;
+  }
+}
