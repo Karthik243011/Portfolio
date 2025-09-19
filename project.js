@@ -14,16 +14,9 @@ function openElectronics() {
 }
 
 // Zudio Clothes Store
-// Function to open a project demo link in a new tab
 function openDemo(url) {
-  if (url) {
-    window.open(url, '_blank'); // Opens the URL in a new browser tab
-  } else {
-    console.warn('No URL provided for this demo.');
-  }
+  window.open(url, '_blank');
 }
-
-
 
 // Movie Search App
 function openMovieApp() {
