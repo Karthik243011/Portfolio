@@ -29,3 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+function openDemo(url) {
+  window.open(url, '_blank'); // Opens the demo in a new tab
+}
+
