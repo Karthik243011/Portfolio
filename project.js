@@ -1,3 +1,6 @@
+function openDemo(url) {
+    window.open(url, "_blank"); // Opens the demo URL in a new tab
+}
 
 function openDemo(url) {
     window.open(url, "_blank");
@@ -26,7 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-function openDemo(url) {
-  window.open(url, '_blank'); // Opens the demo in a new tab
-}
 
