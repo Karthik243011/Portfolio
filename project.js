@@ -1,16 +1,28 @@
-function openDemo(url) {
-    window.open(url, "_blank"); // Opens the demo URL in a new tab
+// CCD Website
+function openCCD() {
+    window.open('https://karthik243011.github.io/Cof/', '_blank');
 }
 
-function openDemo(url) {
-    window.open(url, "_blank");
+// ShopEase E-Commerce Store
+function openShopEase() {
+    window.open('https://shopease4.netlify.app/', '_blank');
 }
-function openDemo(url) {
-    window.open(url, '_blank');
+
+// Electronics Store
+function openElectronics() {
+    window.open('https://nextgenelectronics.netlify.app/', '_blank');
 }
- function openDemo(url) {
-    window.open(url, "_blank"); // opens in new tab
-  }
+
+// Zudio Clothes Store
+function openZudio() {
+    window.open('https://zudiowebsite3.netlify.app/', '_blank');
+}
+
+// Movie Search App
+function openMovieApp() {
+    window.open('https://moviesearchappreactjs.netlify.app/', '_blank');
+}
+
 // Put this in project.js (works if script is in the <head>)
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
