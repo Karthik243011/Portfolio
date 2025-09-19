@@ -14,9 +14,10 @@ function openElectronics() {
 }
 
 // Zudio Clothes Store
-function openZudio() {
-    window.open('https://zudiowebsite3.netlify.app/', '_blank');
+function openDemo(url) {
+  window.open(url, '_blank'); // Opens the URL in a new tab
 }
+
 
 // Movie Search App
 function openMovieApp() {
