@@ -1,6 +1,6 @@
 // CCD Website
-function openCCD() {
-    window.open('https://karthik243011.github.io/Cof/', '_blank');
+function openDemo(url) {
+  window.open(url, '_blank');
 }
 
 // ShopEase E-Commerce Store
