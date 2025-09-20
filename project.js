@@ -23,6 +23,24 @@ function openMovieApp() {
     window.open('https://moviesearchappreactjs.netlify.app/', '_blank');
 }
 
+  // Hamburger
+  const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle menu on hamburger click
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  navLinks.classList.toggle('active');
+});
+
+// Close menu when any link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');  // hide menu
+    hamburger.classList.remove('open');  // reset hamburger
+  });
+});
+
 // Put this in project.js (works if script is in the <head>)
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
