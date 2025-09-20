@@ -10,6 +10,72 @@ nav {
   z-index: 1000;
 }
 
+/* ===== HAMBURGER ===== */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 8px;
+  z-index: 1100; /* above nav */
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate into X when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Mobile hidden nav (default hidden, slide in when active) */
+@media (max-width: 576px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: -100%;   /* keep hidden off-screen */
+    width: 220px;
+    height: 30vh;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    right: 0; /* show when active */
+  }
+}
+
+/* ===== LOGO ===== */
 .logo a {
   font-size: 1.5rem;
   font-weight: 700;
@@ -21,12 +87,7 @@ nav {
   color: #00bcd4;
 }
 
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
+/* ===== NAV LINKS STYLE ===== */
 .nav-links li a {
   color: #eee;
   text-decoration: none;
@@ -39,6 +100,7 @@ nav {
   color: #00bcd4;
 }
 
+/* ===== RESUME BUTTON ===== */
 .resume-btn {
   padding: 6px 14px;
   background: #00bcd4;
@@ -51,18 +113,10 @@ nav {
 .resume-btn:hover {
   background: #00a2b5;
 }
-
-/* Mobile (≤576px) */
-@media (max-width: 576px) {
   nav {
     padding: 14px 5%;
-  }
-
-  .nav-links {
-    display: none; /* Later you can add JS toggle */
   }
 
   .logo a {
     font-size: 1.3rem;
   }
-}
