@@ -3,6 +3,7 @@ function openDemo(url) {
   window.open(url, '_blank'); // Opens the URL in a new tab
 }
 
+
 // ShopEase E-Commerce Store
 function openShopEase() {
     window.open('https://shopease4.netlify.app/', '_blank');
