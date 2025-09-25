@@ -1,7 +1,8 @@
 // CCD Website
-function openDemo(url) {
-  window.open(url, '_blank');
-}
+ function openDemo(url) {
+    // Opens the URL in a new tab
+    window.open(url, '_blank');
+  }
 
 // ShopEase E-Commerce Store
 function openShopEase() {
